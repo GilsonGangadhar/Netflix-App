@@ -24,6 +24,7 @@ function Nav() {
         <div className={`nav ${show & "nav_black"}` }>
             <div className="nav_contents">
              <img 
+                onClick={() => history.push("/")}
                 className="nav_logo"
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1200px-Netflix_2015_logo.svg.png" alt="" />
                 
