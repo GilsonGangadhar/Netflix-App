@@ -21,7 +21,7 @@ function Banner() {
         fetchData()
     }, [])
 
-    console.log(movie)
+    console.log(movie, "banner.js")
 
     //below code is to reduce description words' length to 150, mentioned while invoking. 
 

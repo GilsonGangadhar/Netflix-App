@@ -3,6 +3,7 @@ import './HomeScreen.css'
 import Nav from './Nav'
 import Banner from './Banner'
 import requests from './Request'
+import Row from './Row'
 
 function HomeScreen() {
     return (
@@ -11,13 +12,13 @@ function HomeScreen() {
 
         <Banner />
 
-        {/* <Row title="NETFLIX ORIGINALS" fetchURL={requests.fetchNetflixOriginals} isLargeRow />
-        <Row title="TOP RATED" fetchURL={requests.fetchNetflixOriginals} />
-        <Row title="Action Movies" fetchURL={requests.fetchNetflixOriginals} />
-        <Row title="Comedy Movies" fetchURL={requests.fetchNetflixOriginals} />
-        <Row title="Horror Movies" fetchURL={requests.fetchNetflixOriginals} />
-        <Row title="Romance Movies" fetchURL={requests.fetchNetflixOriginals} />
-        <Row title="Documentaries" fetchURL={requests.fetchNetflixOriginals} /> */}
+        <Row title="NETFLIX ORIGINALS" fetchURL={requests.fetchNetflixOriginals} isLargeRow />
+        <Row title="TOP RATED" fetchURL={requests.fetchTopRated} />
+        <Row title="Action Movies" fetchURL={requests.fetchActionMovies} />
+        <Row title="Comedy Movies" fetchURL={requests.fetchComedyMovies} />
+        <Row title="Horror Movies" fetchURL={requests.fetchHorrorMovies} />
+        <Row title="Romance Movies" fetchURL={requests.fetchRomanceMovies} />
+        <Row title="Documentaries" fetchURL={requests.fetchDocumentaries} />
            
         </div>
     )
