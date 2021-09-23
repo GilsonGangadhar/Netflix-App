@@ -8,6 +8,7 @@ import PlansScreen from '../screens/PlansScreen'
 
 function ProfileScreen() {
     const user = useSelector(selectUser);
+    console.log(user, "profilescreen.js")
 
     return (
         <div className="profileScreen" >
