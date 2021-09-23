@@ -47,7 +47,7 @@
 
 .loginScreen_body{
     position : absolute;
-    top : 30%;
+    top : 20%;
     margin-right : auto;
     margin-left : auto;
     text-align : center;
@@ -55,7 +55,7 @@
     right : 0;
     z-index: 1;
     color : #fff;
-    padding : 20px;
+    padding : 10px;
 }
 
 .loginScreen_gradient {

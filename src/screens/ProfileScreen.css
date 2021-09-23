@@ -60,3 +60,20 @@
     padding: 20px 0 5px 0;
 
 }
+
+.profileScreen_plans > p{
+    margin-bottom : 2rem;
+}
+
+.profileScreen_Renewal{
+    display : flex;
+    
+}
+
+.profileScreen_subscribe{
+    padding : 5px 5px;
+    color : #fff;
+    background-color : #e50914;
+    border : none;
+    cursor : pointer;
+}
