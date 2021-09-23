@@ -12,19 +12,19 @@ function PlansScreen() {
     const [subscription, setSubscription] = useState(null)
 
     useEffect(() => {
-        db.collection('customers').doc(user.uid).collection('subscription').get()
+        db.collection('customers').doc(user.uid).collection('subscriptions').get()
         .then(querySnapshot => {
             querySnapshot.forEach(async subscription => {
                 setSubscription({
                     role : subscription.data().role,
                     current_period_end : subscription.data().current_period_end.seconds,
-                    current_period_start : subscription.data().current_period_start
+                    current_period_start : subscription.data().current_period_start.seconds
                 })
             })
         })
     }, [user.uid])
 
-    
+
 
     useEffect(() => {
         db.collection('products').where('active', '==', true).get()
@@ -45,6 +45,7 @@ function PlansScreen() {
     }, [])
 
     console.log(products, "useEffect") 
+    console.log(subscription, "subcription")
 
 
     const loadCheckout = async (priceId) => {
@@ -72,24 +73,30 @@ function PlansScreen() {
     })
     };
 
-    
-    // console.log(productData.prices.priceId)
 
     return (
         <div className="plansScreen" >
+            {subscription && <p>Renewal Date: {new Date(subscription?.current_period_end*1000).toLocaleDateString()} </p>}
+
+
             {Object.entries(products).map(([productId, productData]) => {
-                //add some logic to check if the user subscribtion is active...
+            
+            const isCurrentPackage = productData.name?.toLowerCase().includes(subscription?.role)
+
                 return (
-                    <div className="plansScreen_plan" >
+                    <div key={productId} className={`${isCurrentPackage && "plansScreen_plan_disabled"} plansScreen_plan`} >
                         <div className="plansScreen_Info">
                             <h5>{productData.name}</h5>
                             <h6>{productData.description}</h6>
                         </div>
 
-                        <button onClick={() => loadCheckout(productData.prices.priceId)}>Subscribe</button>
+                        <button onClick={() => !isCurrentPackage && loadCheckout(productData.prices.priceId)}>{isCurrentPackage ? 'Current Package' : 'Subscribe'}</button>
                     </div>
                 )
+
+
             })}
+
         </div>
     )
 }
