@@ -95,7 +95,7 @@ function PlansScreen() {
                 )
 
 
-            })}
+            })}  
 
         </div>
     )
