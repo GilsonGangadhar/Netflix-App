@@ -1,6 +1,6 @@
-NOTE : Post deployment, Google Chrome is showing "Deceptive site ahead" while trying to view deployed website. Since this is a Netflix clone, Google thinks this as a phishing site (mainly because of the created url). Please click on the "Details" button and then click on "visit this unsafe site" link. I can guarantee there wont be any security threat to your system. Sorry for the inconvenience. 
+NOTE : Post deployment, Google Chrome sometimes may show "Deceptive site ahead" while trying to view deployed website. Since this is a Netflix clone, Google thinks this as a phishing site (mainly because of the created url). Please click on the "Details" button and then click on "visit this unsafe site" link. I can guarantee there wont be any security threat to your system. Sorry for the inconvenience. 
 
-Netflix-App walkthrough : https://drive.google.com/drive/u/1/folders/1BhFBOZ_zfRTpRE3LASpa4ZxFXdsZU9hI
+Netflix-App walkthrough : https://www.awesomescreenshot.com/video/5377398?key=e254789ac278a30f50a921ff8a315fc1
 
 Netflix-App Demo url : https://netflix-app-9bdb4.web.app
 
