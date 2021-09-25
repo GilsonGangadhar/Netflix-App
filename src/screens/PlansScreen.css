@@ -20,3 +20,8 @@
 .plansScreen_plan_disabled > button {
     background-color: grey;
 }
+
+.loader-style {
+    height: 30px;
+    width: 30px;
+}

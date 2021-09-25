@@ -1,7 +1,5 @@
 const API_KEY="9414cd5bdeaee15e8cf8908c46f2ab06"
 
-//1:38:16 ~ 1:43:56
-
 const requests = {
 fetchTrending: `/trending/all/week?api_key=${API_KEY}&language=en-US`,
 fetchNetflixOriginals: `/discover/tv?api_key=${API_KEY}&with_networks=213`,

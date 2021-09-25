@@ -7,6 +7,7 @@ import LoginScreen from './screens/LoginScreen';
 import ProfileScreen from './screens/ProfileScreen'
 import { useDispatch, useSelector } from "react-redux"
 import { login, logout, selectUser } from './features/userSlice'
+import MovieDetails from './screens/MovieDetails';
 
 function App() {
 
@@ -50,6 +51,7 @@ function App() {
       <Switch>
         <Route path="/" component={HomeScreen} exact={true} />
         <Route path="/profile" component={ProfileScreen} exact={true} />
+        <Route path='/details/:id' component={MovieDetails} exact={true} />
         {/* <Route path="/login" component={LoginScreen} exact={true} /> */}
       </Switch>
         )}
