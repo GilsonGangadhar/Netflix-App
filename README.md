@@ -1,8 +1,11 @@
-NOTE : Post deployment, Google Chrome sometimes may show "Deceptive site ahead" while trying to view deployed website. Since this is a Netflix clone, Google thinks this as a phishing site (mainly because of the created url). Please click on the "Details" button and then click on "visit this unsafe site" link. I can guarantee there wont be any security threat to your system. Sorry for the inconvenience. 
+NOTE : Post deployment, Google Chrome sometimes may show "Deceptive site ahead" while trying to view deployed website. Since this is a Netflix clone, Google thinks this as a phishing site (mainly because of the created url). 
+
+Please click on the "Details" button and then click on "visit this unsafe site" link. I can guarantee there wont be any security threat to your system. Sorry for the inconvenience. 
 
 Netflix-App walkthrough : https://www.awesomescreenshot.com/video/5377398?key=e254789ac278a30f50a921ff8a315fc1
 
 Netflix-App Demo url : https://netflix-app-9bdb4.web.app
+(demo url's guest email : gilsongangadhar@gmail.com ; password : netflix@285)
 
 This is a Netflix web clone,  a react firebase app. Here, a user can register and see a variety of movies & documentaries which are categorised by respective genres. You can also get a detailed information of each movie/documentary. Also, users can subscribe to the services via our stripe subscription model. 
 
