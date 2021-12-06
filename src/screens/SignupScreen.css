@@ -45,3 +45,11 @@
 cursor : pointer; 
 text-decoration : underline;
 }
+
+.signupScreen_guestUser {
+    margin-top: 1rem;
+}
+
+.signupScreen_guestUser > h4{
+    margin-bottom : 0.5rem;
+}
